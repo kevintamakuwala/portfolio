@@ -1,0 +1,18 @@
+$primary:#482673;
+$light: #7b9db4;
+
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+
+$custom-theme-colors:(
+    "green": #4cbfa6,
+    "purple-blue": #482673,
+    "light-blue": #f6ebf4,
+    "red": #ed0b70,
+    "dark-blue": #023b59,
+    "sky-blue": #7b9db4,
+);
+
+$theme-colors: map-merge($custom-theme-colors,$theme-colors);
+
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
